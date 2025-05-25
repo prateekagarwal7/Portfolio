@@ -1,0 +1,12 @@
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline;
+    float: right;
+    color: #4BE3AC;
+}
+div{
+    position: fixed;
+    width: 100%;
+}
