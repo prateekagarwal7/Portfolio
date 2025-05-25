@@ -5,8 +5,12 @@ li{
     display: inline;
     float: right;
     color: #4BE3AC;
+    margin:0% 1%;
 }
-div{
-    position: fixed;
-    width: 100%;
+.container{
+    margin-left: 20% !important;
+    display: block;
+}
+li :hover{
+    cursor: pointer;
 }
