@@ -1,0 +1,28 @@
+p-carousel{
+    align-items: center;
+}
+
+.product-box {
+  border: 5px solid #4BE3AC;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;width: auto;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

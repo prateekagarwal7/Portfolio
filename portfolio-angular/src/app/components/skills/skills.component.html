@@ -1,17 +1,11 @@
-<img src="../../../assets/Elemica.png">
-<!-- <img src="../../../assets/c.svg"> -->
-<p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="false">
-    <ng-template let-product #item>
-        <div class="border border-surface rounded-border m-2 p-4">
-            <div class="mb-4">
-                <div class="relative mx-auto">
-                    <img src="../../../assets/{{product.name}}">
-                </div>
-            </div>
-            <div class="mb-4 font-medium">{{ product.name }}</div>
-            <div class="flex justify-between items-center">
-                <!-- <div class="mt-0 font-semibold text-xl">{{ '$' + product.price }}</div> -->
-            </div>
-        </div>
-    </ng-template>
+<p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="true">
+  <ng-template let-product #item>
+    <div class="product-box">
+      <div class="image-container">
+        <img [src]="'assets/' + product.name" alt="Product" />
+      </div>
+    </div>
+  </ng-template>
 </p-carousel>
+
+
