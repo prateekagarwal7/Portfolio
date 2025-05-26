@@ -1,4 +1,4 @@
-<p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="true">
+<p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="false" class="carousel">
   <ng-template let-product #item>
     <div class="product-box">
       <div class="image-container">
@@ -7,5 +7,3 @@
     </div>
   </ng-template>
 </p-carousel>
-
-

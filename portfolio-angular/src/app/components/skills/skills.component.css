@@ -1,16 +1,18 @@
-p-carousel{
-    align-items: center;
-}
 
+::ng-deep .p-carousel-item{
+align-content: center !important;
+padding: 0.5%;
+}
 .product-box {
   border: 5px solid #4BE3AC;
   border-radius: 8px;
-  margin: 0 auto;
+  margin: auto auto;
   padding: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70%;width: auto;
+  height: 80%;width: 80%;
+  
 }
 
 .image-container {
@@ -25,4 +27,9 @@ p-carousel{
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+.p-button-text.p-button-secondary {
+    background: transparent;
+    border-color: #4BE3AC !important;
+    color: #4BE3AC !important;
 }
