@@ -13,6 +13,54 @@ export class SkillsComponent {
   }
 products=[{
     'name':'c.svg'
+  },
+  {
+    'name':'angular.svg'
+  },
+  {
+    'name':'Net.svg'
+  },
+  {
+    'name':'microsoft-sql-server.svg'
+  },
+  {
+    'name':'python.svg'
+  },
+  {
+    'name':'bootstrap.svg'
+  },
+  {
+    'name':'c-sharp-logo.svg'
+  },
+  {
+    'name':'css.svg'
+  },
+  {
+    'name':'github.svg'
+  },
+  {
+    'name':'html5.svg'
+  },
+  {
+    'name':'javascript.svg'
+  },
+  {
+    'name':'jira.svg'
+  },
+  {
+    'name':'jquery.svg'
+  },
+  {
+    'name':'mongodb.svg'
+  },
+  {
+    'name':'postman-api.svg'
+  },
+  {
+    'name':'python.svg'
+  },
+  {
+    'name':'typescript.svg'
   }
 ];
 }
