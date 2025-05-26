@@ -1,14 +1,13 @@
 <p>work works!</p>
-
+@for(work of works;track work){
 <p-card [style]="{ width: '25rem', overflow: 'hidden' }">
     <ng-template #header>
-        <img alt="Card" class="w-full" src="../../../assets/Elemica.png" style="background-color: white;"/>
+        <img alt="Card" class="w-full" src="../../../assets/{{work.img}}" style="background-color: white;"/>
     </ng-template>
-    <ng-template #title> Elemica </ng-template>
-    <ng-template #subtitle> June- Present </ng-template>
+    <ng-template #title> {{work.name}} </ng-template>
+    <ng-template #subtitle>{{work.duration}}</ng-template>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
-        quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
+        {{work.content}}
     </p>
     <ng-template #footer>
         <div class="flex gap-4 mt-1">
@@ -17,3 +16,4 @@
         </div>
     </ng-template>
 </p-card>
+}
