@@ -1,1 +1,49 @@
-<p>form works!</p>
+
+<p-card class="card">
+    <div>
+    <h3>Contact Us</h3>
+    <b><hr style="background-color: #34d399; height: 2px;"></b>
+    </div>
+    <div class="container">
+        <div class="row align-center">
+            <div class="col-6">
+                <p-floatlabel variant="on">
+                    <input pInputText id="first_name"  [(ngModel)]="first" #first='ngModel' autocomplete="off" />
+                    <label for="first_name">First Name</label>
+                </p-floatlabel>
+            </div>
+            <div class="col-6">
+                <p-floatlabel variant="on">
+                    <input pInputText id="last_name"  autocomplete="off" />
+                    <label for="last_name">Last Name</label>
+                </p-floatlabel>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p-floatlabel variant="on">
+                    <input pInputText id="number" type="number" maxlength="10" autocomplete="off" />
+                    <label for="number">Mobile Number</label>
+                </p-floatlabel>
+            </div>
+            <div class="col-6">
+                <p-floatlabel variant="on">
+                    <input pInputText id="email"  autocomplete="off"/>
+                    <label for="email">Email</label>
+                </p-floatlabel>
+            </div>
+        </div>
+        <div class="col-12">
+            <p-floatlabel variant="on">
+                <textarea pTextarea id="message" rows="5" cols="30" style="resize: none"  pSize="large"class="h-full" style="width: 100%;"></textarea>
+                <label for="message">Message</label>
+            </p-floatlabel>
+        </div>
+        
+        <div class="row">
+            <div class="col-12" style="display: flex; justify-content: flex-end;">
+                <p-button label="Submit"></p-button>
+            </div>
+        </div>
+    </div>
+</p-card>

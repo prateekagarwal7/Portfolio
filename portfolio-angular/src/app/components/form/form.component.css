@@ -1,0 +1,17 @@
+.card{
+    width:30%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin:auto auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap:2rem
+}
+input{
+    width: 100%;
+}
+.align-center {
+  display: flex;
+  align-items: center;
+}
