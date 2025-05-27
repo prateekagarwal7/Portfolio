@@ -13,6 +13,10 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './form.component.css'
 })
 export class FormComponent {
-  first:string=''
+  first:string='';
+  last:string='';
+  phone:number=0
+  email:string='';
+  msg:string=''
 
 }

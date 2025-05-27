@@ -8,13 +8,13 @@
         <div class="row align-center">
             <div class="col-6">
                 <p-floatlabel variant="on">
-                    <input pInputText id="first_name"  [(ngModel)]="first" #first='ngModel' autocomplete="off" />
+                    <input pInputText id="first_name"  [(ngModel)]="first" #fname='ngModel' autocomplete="off" />
                     <label for="first_name">First Name</label>
                 </p-floatlabel>
             </div>
             <div class="col-6">
                 <p-floatlabel variant="on">
-                    <input pInputText id="last_name"  autocomplete="off" />
+                    <input pInputText id="last_name"  [(ngModel)]="last" #last_name='ngModel'autocomplete="off" />
                     <label for="last_name">Last Name</label>
                 </p-floatlabel>
             </div>
@@ -22,20 +22,20 @@
         <div class="row">
             <div class="col-6">
                 <p-floatlabel variant="on">
-                    <input pInputText id="number" type="number" maxlength="10" autocomplete="off" />
+                    <input pInputText id="number" type="number" [(ngModel)]="phone" #phone='ngModel' maxlength="10" autocomplete="off" />
                     <label for="number">Mobile Number</label>
                 </p-floatlabel>
             </div>
             <div class="col-6">
                 <p-floatlabel variant="on">
-                    <input pInputText id="email"  autocomplete="off"/>
+                    <input pInputText id="email" [(ngModel)]="email" #mail='ngModel' autocomplete="off"/>
                     <label for="email">Email</label>
                 </p-floatlabel>
             </div>
         </div>
         <div class="col-12">
             <p-floatlabel variant="on">
-                <textarea pTextarea id="message" rows="5" cols="30" style="resize: none"  pSize="large"class="h-full" style="width: 100%;"></textarea>
+                <textarea pTextarea id="message" rows="5" cols="30" [(ngModel)]="msg" #message='ngModel'style="resize: none"  pSize="large"class="h-full" style="width: 100%;"></textarea>
                 <label for="message">Message</label>
             </p-floatlabel>
         </div>
