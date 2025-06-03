@@ -1,3 +1,7 @@
 body{
     background-color: #032D3C;
 }
+@font-face{
+    font-family: google_font;
+    src: url(../src/assets/Handlee-Regular.ttf);
+}
