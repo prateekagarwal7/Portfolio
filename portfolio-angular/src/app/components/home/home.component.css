@@ -1,7 +1,12 @@
-.title-style{
-    color: white;
-    font-size: 105px;
+.text{
+    color:white;
 }
-.designation{
-    
+span{
+    color: #4BE3AC;
+}
+#title{
+    font-size: 100px;
+}
+#intro{
+    font-size: 20px;
 }
