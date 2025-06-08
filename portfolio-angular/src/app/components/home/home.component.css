@@ -10,3 +10,8 @@ span{
 #intro{
     font-size: 20px;
 }
+.icon{
+    border-radius: 50%;
+    height: 10%;
+    width:10%;
+}
