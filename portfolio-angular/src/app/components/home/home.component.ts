@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { github } from '../../../environments/environment.prod';
+import { links } from '../../../environments/environment';
 @Component({
   selector: 'app-home',
   imports: [],
@@ -7,5 +7,6 @@ import { github } from '../../../environments/environment.prod';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-   git=github.url;
+   git=links.url;
+   lkdn=links.lkdlnurl;
 }
