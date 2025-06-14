@@ -12,13 +12,14 @@ span{
 }
 .icon{
     border-radius: 50%;
-    height: 10%;
-    width:10%;
+   
 }
 button{
     background: transparent;
-    border: 5px,solid,#4BE3AC;
+    border: 2.5px,solid,#4BE3AC;
+    margin: auto 1%;
 }
 a{
     color: #4BE3AC;
+    text-decoration: none;
 }
