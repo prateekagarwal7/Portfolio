@@ -15,3 +15,10 @@ span{
     height: 10%;
     width:10%;
 }
+button{
+    background: transparent;
+    border: 5px,solid,#4BE3AC;
+}
+a{
+    color: #4BE3AC;
+}
