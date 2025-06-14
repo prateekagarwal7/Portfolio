@@ -11,6 +11,8 @@ li{
     margin-left: 20% !important;
     display: block;
 }
-li :hover{
+a{
     cursor: pointer;
+    color: inherit;
+    text-decoration: none;
 }
