@@ -1,0 +1,15 @@
+app-navbar {
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.page-content{ 
+  margin-top: 60px;
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
