@@ -11,5 +11,8 @@ app-navbar {
   display: flex;
   align-items: center;
   justify-content: center;
-
+}
+router-outlet + *{
+  display: block;
+  height: 100%;
 }
