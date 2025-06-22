@@ -1,5 +1,6 @@
 .text{
     color:white;
+    height: 100%;
 }
 span{
     color: #4BE3AC;
@@ -12,7 +13,11 @@ span{
 }
 .icon{
     border-radius: 50%;
-   
+   }
+.row{
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 button{
     background: transparent;
@@ -47,6 +52,16 @@ a{
     animation: spin 6s linear infinite;
     transform-origin: center center;
 }
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mains{
+  height: 100%;
+  align-items: center;
+}
+
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -54,4 +69,11 @@ a{
   to {
     transform: rotate(360deg);
   }
+}
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
