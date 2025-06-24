@@ -4,6 +4,7 @@ app-navbar {
   position: fixed;
   top: 0;
   z-index: 1000;
+  background-color: #1d1c21;
 }
 .page-content{ 
   margin-top: 60px;
