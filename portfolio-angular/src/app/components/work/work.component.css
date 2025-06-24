@@ -2,10 +2,11 @@ div{
     display: flex;
     flex-wrap: wrap;
     gap: 10rem;
+    margin-top: 6rem; /* avoid navbar overlap */
+    justify-content: center;
 }
 img{
     width: 100%;
     object-fit: cover;
     background-color: white;
-
 }
