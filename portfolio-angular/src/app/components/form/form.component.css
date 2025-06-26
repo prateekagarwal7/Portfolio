@@ -15,3 +15,7 @@ input{
   display: flex;
   align-items: center;
 }
+:host {
+  
+  margin-top: 7.5%;
+}
