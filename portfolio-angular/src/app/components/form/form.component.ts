@@ -19,21 +19,7 @@ export class FormComponent {
   email:string='';
   msg:string=''
   submitform(){
-    if(this.first.length==0)
-    {
 
-    }else if(this.last.length==0)
-    {
-
-    }else if(this.phone.toString.length!=10)
-    {
-
-    }else if(this.email.length==0)
-    {
-
-    }else {
-      
-    }
   }
 
 }
