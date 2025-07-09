@@ -22,8 +22,10 @@
         <div class="row">
             <div class="col-6">
                 <p-floatlabel variant="on">
-                    <input pInputText id="number" type="number" [(ngModel)]="phone" #phone='ngModel' maxlength="10" autocomplete="off" />
-                    <label for="number">Mobile Number</label>
+                    <!-- <input pInputText id="number" type="number" [(ngModel)]="phone" #phone='ngModel' autocomplete="off" />
+                    <label for="number">Mobile</label> -->
+                     <input pInputText id="phone" [(ngModel)]="phone" autocomplete="off" />
+                    <label for="phone">Mobile Number</label>
                 </p-floatlabel>
             </div>
             <div class="col-6">

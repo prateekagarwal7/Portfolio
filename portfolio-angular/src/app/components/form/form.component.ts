@@ -15,7 +15,7 @@ import { FormsModule } from '@angular/forms';
 export class FormComponent {
   first:string='';
   last:string='';
-  phone:number=0
+  phone:string='';
   email:string='';
   msg:string=''
   submitform(){
