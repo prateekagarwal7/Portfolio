@@ -11,12 +11,21 @@
                     <input pInputText id="first_name"  [(ngModel)]="first" #fname='ngModel' autocomplete="off" />
                     <label for="first_name">First Name</label>
                 </p-floatlabel>
+                @if(!errcode)
+                {
+                    <p-message severity="error" variant="simple">{{errmsg}}</p-message>
+                } 
             </div>
             <div class="col-6">
                 <p-floatlabel variant="on">
                     <input pInputText id="last_name"  [(ngModel)]="last" #last_name='ngModel'autocomplete="off" />
                     <label for="last_name">Last Name</label>
                 </p-floatlabel>
+                @if(!errcode)
+                {
+                    <p-message severity="error" variant="simple">Please Enter Name</p-message>
+                }
+                
             </div>
         </div>
         <div class="row">
@@ -27,12 +36,21 @@
                      <input pInputText id="phone" [(ngModel)]="phone" autocomplete="off" />
                     <label for="phone">Mobile Number</label>
                 </p-floatlabel>
+                @if(!errcode)
+                {
+                    <p-message severity="error" variant="simple">Enter the Phone Number</p-message>
+                }
             </div>
             <div class="col-6">
                 <p-floatlabel variant="on">
                     <input pInputText id="email" [(ngModel)]="email" #mail='ngModel' autocomplete="off"/>
                     <label for="email">Email</label>
                 </p-floatlabel>
+                @if(!errcode)
+                {
+                    <p-message severity="error" variant="simple">Please Enter the Valid Email</p-message>
+                }
+                
             </div>
         </div>
         <div class="col-12">
