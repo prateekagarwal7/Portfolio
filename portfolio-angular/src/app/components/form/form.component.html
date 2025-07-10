@@ -11,7 +11,7 @@
                     <input pInputText id="first_name"  [(ngModel)]="first" #fname='ngModel' autocomplete="off" />
                     <label for="first_name">First Name</label>
                 </p-floatlabel>
-                @if(!errcode)
+                @if(errcode==0)
                 {
                     <p-message severity="error" variant="simple">{{errmsg}}</p-message>
                 } 
@@ -21,7 +21,7 @@
                     <input pInputText id="last_name"  [(ngModel)]="last" #last_name='ngModel'autocomplete="off" />
                     <label for="last_name">Last Name</label>
                 </p-floatlabel>
-                @if(!errcode)
+                @if(errcode==1)
                 {
                     <p-message severity="error" variant="simple">Please Enter Name</p-message>
                 }
@@ -36,7 +36,7 @@
                      <input pInputText id="phone" [(ngModel)]="phone" autocomplete="off" />
                     <label for="phone">Mobile Number</label>
                 </p-floatlabel>
-                @if(!errcode)
+                @if(errcode==2)
                 {
                     <p-message severity="error" variant="simple">Enter the Phone Number</p-message>
                 }
@@ -46,7 +46,7 @@
                     <input pInputText id="email" [(ngModel)]="email" #mail='ngModel' autocomplete="off"/>
                     <label for="email">Email</label>
                 </p-floatlabel>
-                @if(!errcode)
+                @if(errcode==3)
                 {
                     <p-message severity="error" variant="simple">Please Enter the Valid Email</p-message>
                 }

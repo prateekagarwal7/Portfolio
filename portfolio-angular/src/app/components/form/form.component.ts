@@ -20,7 +20,7 @@ export class FormComponent {
   email:string='';
   msg:string='';
   errmsg:string='';
-  errcode:number=1;
+  errcode:number | undefined;
 
   
   validateData()
@@ -36,26 +36,26 @@ export class FormComponent {
     {
       return {
         message:"Please Enter valid Last Name",
-        code:0
+        code:1
       }
     }
     if(this.email=='')
     {
       return {
         message:"Please Enter valid Email",
-        code:0
+        code:2
       }
     }
     if(this.phone.length==10)
     {
       return {
         message:"Please Enter valid Phone Number Name",
-        code:0
+        code:3
       }
     }else{
       return{
         message:"Success",
-        code:1
+        code:4
       }
     }
     
