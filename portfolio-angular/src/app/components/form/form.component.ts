@@ -22,7 +22,11 @@ export class FormComponent {
   errmsg:string='';
   errcode:number | undefined;
 
-  
+  validemail(email:string)
+  {
+    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return regex.test(email)
+  }
   validateData()
   {
     if(this.first=='')
@@ -39,17 +43,17 @@ export class FormComponent {
         code:1
       }
     }
-    if(this.email=='')
-    {
-      return {
-        message:"Please Enter valid Email",
-        code:2
-      }
-    }
-    if(this.phone.length==10)
+    if(this.phone.length!=10)
     {
       return {
         message:"Please Enter valid Phone Number Name",
+        code:2
+      }
+    }
+    if(!this.validemail(this.email))
+    {
+      return {
+        message:"Please Enter valid Email",
         code:3
       }
     }else{
