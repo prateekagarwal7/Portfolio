@@ -1,7 +1,9 @@
 .card{
     width:100%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
     margin:auto auto;
+    border-width: 5px;
+    border-color: #4BE3AC;
 }
 .container {
   display: flex;
@@ -18,4 +20,7 @@ input{
 :host {
   
   margin-top: 7.5%;
+}
+h3, label{
+  color:#4BE3AC;
 }
