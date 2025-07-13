@@ -6,6 +6,8 @@ import { TextareaModule } from 'primeng/textarea';
 import { ButtonModule } from 'primeng/button';
 import { FormsModule } from '@angular/forms';
 import { MessageModule } from 'primeng/message';
+import { MailService } from '../../services/mail.service';
+import { access_key } from '../../../environments/environment';
 
 @Component({
   selector: 'app-form',
@@ -21,6 +23,10 @@ export class FormComponent {
     email:'',
     message:''
   };
+  access:any=access_key;
+  constructor(private mailService :MailService){
+
+  }
   errmsg:string='';
   errcode:number | undefined;
 
@@ -70,6 +76,24 @@ export class FormComponent {
     const res = this.validateData();
     this.errmsg=res.message;
     this.errcode=res.code;
+    if(this.errcode==4)
+    {
+      const formData = new FormData;
+      formData.append('access_key', this.access); 
+      formData.append('subject', 'New Contact Form Submission');
+      formData.append('name', `${this.contactForm.first} ${this.contactForm.last}`);
+      formData.append('email', this.contactForm.email);
+      formData.append('phone', this.contactForm.phone);
+      formData.append('message', this.contactForm.msg);
+      this.mailService.sendEmail(formData).then(res=>{
+        if(res.ok)
+        {
+          console.log("form submitted");
+        }else{
+          console.log("error occured");
+        }
+      })
+    }
   }
 
 }
