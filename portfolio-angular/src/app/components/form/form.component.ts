@@ -14,11 +14,13 @@ import { MessageModule } from 'primeng/message';
   styleUrl: './form.component.css'
 })
 export class FormComponent {
-  first:string='';
-  last:string='';
-  phone:string='';
-  email:string='';
-  msg:string='';
+  contactForm:any ={
+    first:'',
+    last:'',
+    phone:'',
+    email:'',
+    message:''
+  };
   errmsg:string='';
   errcode:number | undefined;
 
@@ -29,28 +31,28 @@ export class FormComponent {
   }
   validateData()
   {
-    if(this.first=='')
+    if(this.contactForm.first=='')
     {
       return {
         message:"Please Enter valid Name",
         code:0
       }
     }
-    if(this.last=='')
+    if(this.contactForm.last=='')
     {
       return {
         message:"Please Enter valid Last Name",
         code:1
       }
     }
-    if(this.phone.length!=10)
+    if(this.contactForm.phone.length!=10)
     {
       return {
         message:"Please Enter valid Phone Number Name",
         code:2
       }
     }
-    if(!this.validemail(this.email))
+    if(!this.validemail(this.contactForm.email))
     {
       return {
         message:"Please Enter valid Email",
