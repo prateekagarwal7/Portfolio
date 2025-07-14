@@ -89,11 +89,15 @@ export class FormComponent {
         if(res.ok)
         {
           console.log("form submitted");
+          this.clearform()
         }else{
           console.log("error occured");
         }
       })
     }
+  }
+  clearform(){
+    this.contactForm={}
   }
 
 }
