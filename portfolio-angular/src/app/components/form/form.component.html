@@ -1,69 +1,89 @@
-
-<p-card class="card">
-    <div>
-    <h3>Let's Work Together</h3>
-    <b><hr style="background-color: #34d399; height: 2px;"></b>
-    </div>
-    <div class="container">
-        <div class="row align-center">
-            <div class="col-6">
-                <p-floatlabel variant="on">
-                    <input pInputText id="first_name"  [(ngModel)]="contactForm.first" #fname='ngModel' autocomplete="off" />
-                    <label for="first_name">First Name</label>
-                </p-floatlabel>
-                @if(errcode==0)
-                {
-                    <p-message severity="error" variant="simple">{{errmsg}}</p-message>
-                } 
+<div style="width: 100%;">
+    <div class="row">
+        <div class="col-6">
+        <p-card class="card">
+            <div>
+                <h3>Let's Work Together</h3>
+                <b><hr style="background-color: #34d399; height: 2px;"></b>
             </div>
-            <div class="col-6">
-                <p-floatlabel variant="on">
-                    <input pInputText id="last_name"  [(ngModel)]="contactForm.last" #last_name='ngModel'autocomplete="off" />
-                    <label for="last_name">Last Name</label>
-                </p-floatlabel>
-                @if(errcode==1)
-                {
-                    <p-message severity="error" variant="simple">Please Enter Name</p-message>
-                }
+            <div class="container">
+                <div class="row align-center">
+                    <div class="col-6">
+                        <p-floatlabel variant="on">
+                            <input pInputText id="first_name"  [(ngModel)]="contactForm.first" #fname='ngModel' autocomplete="off" />
+                            <label for="first_name">First Name</label>
+                        </p-floatlabel>
+                        @if(errcode==0)
+                        {
+                            <p-message severity="error" variant="simple">{{errmsg}}</p-message>
+                        } 
+                    </div>
+                    <div class="col-6">
+                        <p-floatlabel variant="on">
+                            <input pInputText id="last_name"  [(ngModel)]="contactForm.last" #last_name='ngModel'autocomplete="off" />
+                            <label for="last_name">Last Name</label>
+                        </p-floatlabel>
+                        @if(errcode==1)
+                        {
+                            <p-message severity="error" variant="simple">Please Enter Name</p-message>
+                        }
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <p-floatlabel variant="on">
+                            <!-- <input pInputText id="number" type="number" [(ngModel)]="phone" #phone='ngModel' autocomplete="off" />
+                            <label for="number">Mobile</label> -->
+                            <input pInputText id="phone" [(ngModel)]="contactForm.phone" autocomplete="off" />
+                            <label for="phone">Mobile Number</label>
+                        </p-floatlabel>
+                        @if(errcode==2)
+                        {
+                            <p-message severity="error" variant="simple">Enter the Phone Number</p-message>
+                        }
+                    </div>
+                    <div class="col-6">
+                        <p-floatlabel variant="on">
+                            <input pInputText id="email" [(ngModel)]="contactForm.email" #mail='ngModel' autocomplete="off"/>
+                            <label for="email">Email</label>
+                        </p-floatlabel>
+                        @if(errcode==3)
+                        {
+                            <p-message severity="error" variant="simple">Please Enter the Valid Email</p-message>
+                        }
+                        
+                    </div>
+                </div>
+                <div class="col-12">
+                    <p-floatlabel variant="on">
+                        <textarea pTextarea id="message" rows="5" cols="30" [(ngModel)]="contactForm.msg" #message='ngModel'style="resize: none"  pSize="large"class="h-full" style="width: 100%;"></textarea>
+                        <label for="message">Message</label>
+                    </p-floatlabel>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12" style="display: flex; justify-content: flex-end;">
+                        <p-button label="Send Message" (click)="submitform()" ></p-button>
+                    </div>
+                </div>
+            </div>
+        </p-card>
+    </div>
+    <div class="col-6">
+        <div style="height: 100%;">
+            <div class="contact-icon">
+                <div style="width: 10%; height: 100%;">
+                    <i class="bi bi-envelope-fill icon"></i>
+                </div>
                 
             </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <p-floatlabel variant="on">
-                    <!-- <input pInputText id="number" type="number" [(ngModel)]="phone" #phone='ngModel' autocomplete="off" />
-                    <label for="number">Mobile</label> -->
-                     <input pInputText id="phone" [(ngModel)]="contactForm.phone" autocomplete="off" />
-                    <label for="phone">Mobile Number</label>
-                </p-floatlabel>
-                @if(errcode==2)
-                {
-                    <p-message severity="error" variant="simple">Enter the Phone Number</p-message>
-                }
+            <div class="contact-icon">
+                <div style="width: 10%; height: 100%;">
+                    <i class="bi bi-telephone-fill icon"></i>
+                </div>
             </div>
-            <div class="col-6">
-                <p-floatlabel variant="on">
-                    <input pInputText id="email" [(ngModel)]="contactForm.email" #mail='ngModel' autocomplete="off"/>
-                    <label for="email">Email</label>
-                </p-floatlabel>
-                @if(errcode==3)
-                {
-                    <p-message severity="error" variant="simple">Please Enter the Valid Email</p-message>
-                }
-                
-            </div>
-        </div>
-        <div class="col-12">
-            <p-floatlabel variant="on">
-                <textarea pTextarea id="message" rows="5" cols="30" [(ngModel)]="contactForm.msg" #message='ngModel'style="resize: none"  pSize="large"class="h-full" style="width: 100%;"></textarea>
-                <label for="message">Message</label>
-            </p-floatlabel>
-        </div>
-        
-        <div class="row">
-            <div class="col-12" style="display: flex; justify-content: flex-end;">
-                <p-button label="Send Message" (click)="submitform()" ></p-button>
-            </div>
-        </div>
+        </div> 
     </div>
-</p-card>
+    </div>
+</div>

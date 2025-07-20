@@ -4,6 +4,7 @@
     margin:auto auto;
     border-width: 5px;
     border-color: #4BE3AC;
+    background-color: #28272c;
 }
 .container {
   display: flex;
@@ -17,10 +18,23 @@ input{
   display: flex;
   align-items: center;
 }
-:host {
-  
-  margin-top: 7.5%;
-}
 h3, label{
   color:#4BE3AC;
+}
+.contact-icon{
+  display: block;
+  height: 20%;
+}
+.icon{
+ font-size: 50px;
+ color: #4BE3AC;
+}
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  width: 100%;
 }
