@@ -1,7 +1,7 @@
 <div style="width: 100%;">
     <div class="row">
         <div class="col-6">
-        <p-card class="card">
+        <p-card class="card" contentStyle="background-color: #f0f0f0;">
             <div>
                 <h3>Let's Work Together</h3>
                 <b><hr style="background-color: #34d399; height: 2px;"></b>
@@ -73,14 +73,19 @@
     <div class="col-6">
         <div style="height: 100%;">
             <div class="contact-icon">
-                <div class="icon-div">
-                    <i class="bi bi-envelope-fill icon"></i>
+                <div style="display: flex;align-items: center;">
+                    <div class="icon-div">
+                        <i class="bi bi-envelope-fill icon"></i>
+                    </div>
+                    <span style="color: white">{{person_email}}</span>
                 </div>
-                
             </div>
             <div class="contact-icon">
-                <div class="icon-div">
-                    <i class="bi bi-telephone-fill icon"></i>
+                <div style="display: flex;align-items: center; padding: 2px;">
+                    <div class="icon-div">
+                        <i class="bi bi-telephone-fill icon"></i>
+                    </div>
+                    <span style="color: white;">{{person_phone}}</span>
                 </div>
             </div>
         </div> 

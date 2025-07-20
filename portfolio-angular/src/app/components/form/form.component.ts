@@ -7,7 +7,7 @@ import { ButtonModule } from 'primeng/button';
 import { FormsModule } from '@angular/forms';
 import { MessageModule } from 'primeng/message';
 import { MailService } from '../../services/mail.service';
-import { access_key } from '../../../environments/environment';
+import { access_key,personal } from '../../../environments/environment';
 
 @Component({
   selector: 'app-form',
@@ -23,6 +23,8 @@ export class FormComponent {
     email:'',
     message:''
   };
+  person_phone=personal.phone;
+  person_email=personal.mail;
   access:any=access_key;
   constructor(private mailService :MailService){
 
