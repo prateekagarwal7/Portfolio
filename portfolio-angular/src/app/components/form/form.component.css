@@ -46,3 +46,9 @@ h3, label{
   margin-top: 5%;
   width: 100%;
 }
+:host ::ng-deep input.p-inputtext{
+  background-color: #1d1c21;
+}
+:host ::ng-deep textarea.p-textarea{
+  background-color: #1d1c21;
+}
