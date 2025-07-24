@@ -1,9 +1,11 @@
-<p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="false" class="carousel">
-  <ng-template let-product #item>
-    <div class="product-box">
-      <div class="image-container">
-        <img [src]="'assets/' + product.name" alt="Product" />
+<div>
+  <p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="false" class="carousel">
+    <ng-template let-product #item>
+      <div class="product-box">
+        <div class="image-container">
+          <img [src]="'assets/' + product.name" alt="Product" />
+        </div>
       </div>
-    </div>
-  </ng-template>
-</p-carousel>
+    </ng-template>
+  </p-carousel>
+</div>
