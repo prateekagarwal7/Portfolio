@@ -1,11 +1,17 @@
-<div>
-  <p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="false" class="carousel">
-    <ng-template let-product #item>
-      <div class="product-box">
-        <div class="image-container">
-          <img [src]="'assets/' + product.name" alt="Product" />
+<div style="text-align: center;">
+  <h3 class="skills">
+    <span style="border-bottom: 3px solid #4BE3AC;">Skills</span>
+  </h3>
+  <div>
+    <p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="false" class="carousel">
+      <ng-template let-product #item>
+        <div class="product-box">
+          <div class="image-container">
+            <img [src]="'assets/' + product.name" alt="Product" />
+          </div>
+          <h5 style="align-items: center; color: white;">{{product.title}}</h5>          
         </div>
-      </div>
-    </ng-template>
-  </p-carousel>
+      </ng-template>
+    </p-carousel>
+  </div>
 </div>
