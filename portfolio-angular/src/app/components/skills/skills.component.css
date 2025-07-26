@@ -1,17 +1,24 @@
 
-::ng-deep .p-carousel-item{
+/* ::ng-deep .p-carousel-item{
 align-content: center !important;
 padding: 0.5%;
+} */
+p-carousel{
+  width: 70%;
+}
+.divCarousel{
+  display: flex;
+  justify-content: center;
 }
 .product-box {
-  
   border-radius: 8px;
   margin: auto auto;
   padding: 16px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80%;width: 80%;
+  height: 50%;width: 50%;
   
 }
 .skills{
