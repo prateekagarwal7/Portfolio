@@ -13,101 +13,95 @@ export class SkillsComponent {
 products=[{
     'name':'c.svg',
     'title':'C++',
-    'description':''
+    'description':'Strong foundation in object-oriented programming, data structures, and algorithms using C++.'
 
   },
   {
     'name':'angular.svg',
     'title':'Angular',
-    'description':''
+    'description':'Used AngularJS in enterprise web apps for dynamic front-end development and component-based architecture.'
 
   },
   {
     'name':'Net.svg',
     'title':'.NET',
-    'description':''
+    'description':'Worked extensively on .NET and MVC architecture for backend development in supply chain software.'
 
   },
   {
     'name':'microsoft-sql-server.svg',
     'title':'MS SQL Server',
-    'description':''
+    'description':'Experienced in writing complex queries, joins, and managing relational databases in .NET applications.'
 
   },
   {
     'name':'python.svg',
     'title':'Python',
-    'description':''
+    'description':'Used in data analysis and scripting. Built Olympic analytics project and automations using Python.'
   },
   {
     'name':'bootstrap.svg',
     'title':'Bootstrap',
-    'description':''
+    'description':'Implemented responsive UI layouts and dashboards with Bootstrap’s grid system and components.'
 
   },
   {
     'name':'c-sharp-logo.svg',
     'title':'C#',
-    'description':''
+    'description':'Developed backend logic in C# within MVC framework during internship and full-time projects.'
 
   },
   {
     'name':'css.svg',
     'title':'CSS',
-    'description':''
+    'description':'Styled multiple projects including YourTube and admin dashboards with custom CSS and responsiveness.'
 
   },
   {
     'name':'github.svg',
     'title':'GitHub',
-    'description':''
+    'description':'Used for version control and collaboration across multiple development projects and internships.'
 
   },
   {
     'name':'html5.svg',
     'title':'HTML5',
-    'description':''
+    'description':'Created structured and semantic web pages for various full-stack applications and UI modules.'
 
   },
   {
     'name':'javascript.svg',
     'title':'Javascript',
-    'description':''
+    'description':'Built interactive features and handled client-side logic in YourTube and Payroll Management System.'
 
   },
   {
     'name':'jira.svg',
     'title':'JIRA',
-    'description':''
+    'description':'Used in team environments for agile development, sprint planning, and tracking production issues.'
 
   },
   {
     'name':'jquery.svg',
     'title':'JQuery',
-    'description':''
+    'description':'Utilized for DOM manipulation and event handling in legacy code during web enhancement tasks.'
 
   },
   {
     'name':'mongodb.svg',
     'title':'MongoDB',
-    'description':''
+    'description':'Designed and managed NoSQL schemas in MongoDB Atlas for Admin Portal in internship.'
 
   },
   {
     'name':'postman-api.svg',
     'title':'Postman',
-    'description':''
-
-  },
-  {
-    'name':'python.svg',
-    'title':'Python',
-    'description':''
+    'description':'Tested RESTful APIs and verified backend integrations during full-stack application development.'
 
   },
   {
     'name':'typescript.svg',
-    'description':'',
+    'description':'Worked with Angular applications where TypeScript ensured type safety and clean code structure.',
     'title':'TypeScript'
 
   }
