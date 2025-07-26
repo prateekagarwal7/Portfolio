@@ -9,58 +9,107 @@ import { CarouselModule } from 'primeng/carousel';
 })
 export class SkillsComponent {
   constructor(){
-    console.log("redirected");
   }
 products=[{
-    'name':'c.svg'
+    'name':'c.svg',
+    'title':'C++',
+    'description':''
+
   },
   {
-    'name':'angular.svg'
+    'name':'angular.svg',
+    'title':'Angular',
+    'description':''
+
   },
   {
-    'name':'Net.svg'
+    'name':'Net.svg',
+    'title':'.NET',
+    'description':''
+
   },
   {
-    'name':'microsoft-sql-server.svg'
+    'name':'microsoft-sql-server.svg',
+    'title':'MS SQL Server',
+    'description':''
+
   },
   {
-    'name':'python.svg'
+    'name':'python.svg',
+    'title':'Python',
+    'description':''
   },
   {
-    'name':'bootstrap.svg'
+    'name':'bootstrap.svg',
+    'title':'Bootstrap',
+    'description':''
+
   },
   {
-    'name':'c-sharp-logo.svg'
+    'name':'c-sharp-logo.svg',
+    'title':'C#',
+    'description':''
+
   },
   {
-    'name':'css.svg'
+    'name':'css.svg',
+    'title':'CSS',
+    'description':''
+
   },
   {
-    'name':'github.svg'
+    'name':'github.svg',
+    'title':'GitHub',
+    'description':''
+
   },
   {
-    'name':'html5.svg'
+    'name':'html5.svg',
+    'title':'HTML5',
+    'description':''
+
   },
   {
-    'name':'javascript.svg'
+    'name':'javascript.svg',
+    'title':'Javascript',
+    'description':''
+
   },
   {
-    'name':'jira.svg'
+    'name':'jira.svg',
+    'title':'JIRA',
+    'description':''
+
   },
   {
-    'name':'jquery.svg'
+    'name':'jquery.svg',
+    'title':'JQuery',
+    'description':''
+
   },
   {
-    'name':'mongodb.svg'
+    'name':'mongodb.svg',
+    'title':'MongoDB',
+    'description':''
+
   },
   {
-    'name':'postman-api.svg'
+    'name':'postman-api.svg',
+    'title':'Postman',
+    'description':''
+
   },
   {
-    'name':'python.svg'
+    'name':'python.svg',
+    'title':'Python',
+    'description':''
+
   },
   {
-    'name':'typescript.svg'
+    'name':'typescript.svg',
+    'description':'',
+    'title':'TypeScript'
+
   }
 ];
 }
