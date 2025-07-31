@@ -114,10 +114,10 @@ products=[{
 ];
 updateCarousel() {
     const width = window.innerWidth;
-    if (width <= 770) {
+    if (width <= 786) {
       this.numVisible = 1;
       this.numScroll = 1;
-    } else if (width <= 1410) {
+    } else if (width <= 1024) {
       this.numVisible = 2;
       this.numScroll = 2;
     } else {

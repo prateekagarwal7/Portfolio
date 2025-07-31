@@ -10,6 +10,7 @@ p-carousel{
   display: flex;
   justify-content: center;
   margin-top: 2%;
+  align-items: center;
 }
 #description{
   color: white;
@@ -54,4 +55,24 @@ p-carousel{
 }
 .p-carousel-next-button{
   background-color: #4BE3AC;
+}
+@media (max-width: 768px) {
+  p-carousel {
+    width: 95%;
+  }
+
+  .product-box {
+    width: 90%;
+    padding: 12px;
+  }
+
+  ::ng-deep .p-carousel-next,
+  ::ng-deep .p-carousel-prev {
+    width: 30px;
+    height: 30px;
+  }
+
+  .image-container img {
+    width: 90%;
+  }
 }
