@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
 
 @Component({
@@ -9,6 +9,12 @@ import { CarouselModule } from 'primeng/carousel';
 })
 export class SkillsComponent {
   constructor(){
+  }
+  numVisible = 3;
+  numScroll = 3;
+  @HostListener('window:resize',[])
+  onResize() {
+    this.updateCarousel();
   }
 products=[{
     'name':'c.svg',
@@ -106,4 +112,17 @@ products=[{
 
   }
 ];
+updateCarousel() {
+    const width = window.innerWidth;
+    if (width <= 770) {
+      this.numVisible = 1;
+      this.numScroll = 1;
+    } else if (width <= 1410) {
+      this.numVisible = 2;
+      this.numScroll = 2;
+    } else {
+      this.numVisible = 3;
+      this.numScroll = 3;
+    }
+  }
 }
