@@ -40,7 +40,7 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
-src/environments/environment.ts
+
 src/environments/environment.prod.ts
 src/assets/Resume.pdf
 src/assets/photo1.jpeg
