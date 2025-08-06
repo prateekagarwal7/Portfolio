@@ -42,5 +42,6 @@ testem.log
 Thumbs.db
 
 src/environments/environment.prod.ts
+src/environments/environments.ts
 src/assets/Resume.pdf
 src/assets/photo1.jpeg

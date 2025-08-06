@@ -7,7 +7,7 @@ import { ButtonModule } from 'primeng/button';
 import { FormsModule } from '@angular/forms';
 import { MessageModule } from 'primeng/message';
 import { MailService } from '../../services/mail.service';
-import { access_key,personal } from '../../../environments/environment';
+//import { access_key} from '../../../environments/environment';
 
 @Component({
   selector: 'app-form',
@@ -16,6 +16,10 @@ import { access_key,personal } from '../../../environments/environment';
   styleUrl: './form.component.css'
 })
 export class FormComponent {
+  personal={
+    phone:'+91 95285-18713',
+    mail:'prateekagarwal246@gmail.com'
+  }
   contactForm:any ={
     first:'',
     last:'',
@@ -23,9 +27,9 @@ export class FormComponent {
     email:'',
     message:''
   };
-  person_phone=personal.phone;
-  person_email=personal.mail;
-  access:any=access_key;
+  person_phone=this.personal.phone;
+  person_email=this.personal.mail;
+  //access:any=access_key;
   constructor(private mailService :MailService){
 
   }
@@ -81,7 +85,7 @@ export class FormComponent {
     if(this.errcode==4)
     {
       const formData = new FormData;
-      formData.append('access_key', this.access); 
+      //formData.append('access_key', this.access); 
       formData.append('subject', 'New Contact Form Submission');
       formData.append('name', `${this.contactForm.first} ${this.contactForm.last}`);
       formData.append('email', this.contactForm.email);
